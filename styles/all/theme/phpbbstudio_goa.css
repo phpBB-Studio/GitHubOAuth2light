@@ -1,0 +1,36 @@
+/**
+ *
+ * phpBB Studio - GitHub OAuth2 light. An extension for the phpBB Forum Software package.
+ *
+ * @copyright (c) 2019, phpBB Studio, https://www.phpbbstudio.com
+ * @license GNU General Public License, version 2 (GPL-2.0)
+ *
+ */
+a[href$="oauth_service=github"] {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+	background: #1b1f23;
+	border-color: #1b1f23;
+	border-radius: 4px;
+	color: #ececec;
+	padding: 4px 8px;
+	line-height: 1.3;
+}
+
+a[href$="oauth_service=github"]:hover {
+	background: #15181c;
+	border-color: #1b1f23;
+	color: #ffffff;
+}
+
+a[href$="oauth_service=github"]:before {
+	font-family: FontAwesome, sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+	color: #ffffff;
+	margin-right: 6px;
+	content: "\f09b";
+	vertical-align: -2px;
+}

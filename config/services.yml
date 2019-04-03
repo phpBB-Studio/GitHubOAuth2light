@@ -1,0 +1,16 @@
+services:
+    phpbbstudio.goa.listener:
+        class: phpbbstudio\goa\event\listener
+        arguments:
+            - '@language'
+        tags:
+            - { name: event.listener }
+
+    auth.provider.oauth.service.github:
+        class: phpbbstudio\goa\auth\provider\oauth\service\github
+        arguments:
+            - '@config'
+            - '@language'
+            - '@request'
+        tags:
+            - { name: auth.provider.oauth.service }
