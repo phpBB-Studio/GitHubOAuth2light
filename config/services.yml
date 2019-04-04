@@ -6,7 +6,7 @@ services:
         tags:
             - { name: event.listener }
 
-    auth.provider.oauth.service.github:
+    auth.provider.oauth.service.studio_github:
         class: phpbbstudio\goa\auth\provider\oauth\service\github
         arguments:
             - '@config'

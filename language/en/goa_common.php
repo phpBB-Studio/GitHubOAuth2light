@@ -35,14 +35,14 @@ if (empty($lang) || !is_array($lang))
 //
 
 $lang = array_merge($lang, array(
-	'AUTH_PROVIDER_OAUTH_SERVICE_GITHUB'	=> 'GitHub',
+	'AUTH_PROVIDER_OAUTH_SERVICE_STUDIO_GITHUB'	=> 'GitHub',
 
-	'PHPBBSTUDIO_GOA_EXCEPTION_TOKEN'		=> 'Something went wrong requesting an Battle.net OAuth2 access token.<br>
+	'PHPBBSTUDIO_GOA_EXCEPTION_TOKEN'		=> 'Something went wrong requesting an GitHub OAuth2 access token.<br>
 												Original error message:<br>
 												<samp class="error">%s</samp><br><br>
 												<em>Did you perhaps refresh the page after linking an account?</em>',
 
-	'PHPBBSTUDIO_GOA_EXCEPTION_USER_INFO'	=> 'Something went wrong requesting the Battle.net OAuth2 account information.<br><br>
+	'PHPBBSTUDIO_GOA_EXCEPTION_USER_INFO'	=> 'Something went wrong requesting the GitHub OAuth2 account information.<br><br>
 												Original error message:<br>
 												<samp class="error">%s</samp>',
 
