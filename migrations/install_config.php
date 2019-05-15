@@ -14,12 +14,12 @@ class install_config extends \phpbb\db\migration\migration
 {
 	public function effectively_installed()
 	{
-		return $this->config->offsetExists('auth_oauth_github_key');
+		return $this->config->offsetExists('auth_oauth_studio_github_key');
 	}
 
 	public static function depends_on()
 	{
-		return array('\phpbb\db\migration\data\v32x\v325rc1');
+		return array('\phpbb\db\migration\data\v32x\v327');
 	}
 
 	/**
@@ -30,8 +30,8 @@ class install_config extends \phpbb\db\migration\migration
 	public function update_data()
 	{
 		return array(
-			array('config.add', array('auth_oauth_github_key', '')),
-			array('config.add', array('auth_oauth_github_secret', '')),
+			array('config.add', array('auth_oauth_studio_github_key', '')),
+			array('config.add', array('auth_oauth_studio_github_secret', '')),
 		);
 	}
 }

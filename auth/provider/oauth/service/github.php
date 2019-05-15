@@ -52,8 +52,8 @@ class github extends \phpbb\auth\provider\oauth\service\base
 	public function get_service_credentials()
 	{
 		return array(
-			'key'		=> $this->config['auth_oauth_github_key'],
-			'secret'	=> $this->config['auth_oauth_github_secret'],
+			'key'		=> $this->config['auth_oauth_studio_github_key'],
+			'secret'	=> $this->config['auth_oauth_studio_github_secret'],
 		);
 	}
 
