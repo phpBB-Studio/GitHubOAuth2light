@@ -13,6 +13,7 @@ namespace phpbbstudio\goa\auth\provider\oauth\service;
 use phpbb\auth\provider\oauth\service\exception;
 use OAuth\Common\Http\Exception\TokenResponseException;
 use OAuth\Common\Exception\Exception as AccountResponseException;
+
 /**
 * phpBB Studio - GitHub OAuth2 light service
 */
@@ -51,10 +52,10 @@ class github extends \phpbb\auth\provider\oauth\service\base
 	 */
 	public function get_service_credentials()
 	{
-		return array(
+		return [
 			'key'		=> $this->config['auth_oauth_studio_github_key'],
 			'secret'	=> $this->config['auth_oauth_studio_github_secret'],
-		);
+		];
 	}
 
 	/**
@@ -62,7 +63,7 @@ class github extends \phpbb\auth\provider\oauth\service\base
 	 */
 	public function perform_auth_login()
 	{
-		if (!($this->service_provider instanceof \OAuth\OAuth2\Service\GitHub))
+		if (!($this->service_provider instanceof \OAuth\OAuth2\Service\Studio_github))
 		{
 			throw new exception('AUTH_PROVIDER_OAUTH_ERROR_INVALID_SERVICE_TYPE');
 		}
@@ -102,7 +103,7 @@ class github extends \phpbb\auth\provider\oauth\service\base
 	 */
 	public function perform_token_auth()
 	{
-		if (!($this->service_provider instanceof \OAuth\OAuth2\Service\GitHub))
+		if (!($this->service_provider instanceof \OAuth\OAuth2\Service\Studio_github))
 		{
 			throw new exception('AUTH_PROVIDER_OAUTH_ERROR_INVALID_SERVICE_TYPE');
 		}

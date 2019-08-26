@@ -29,9 +29,7 @@ class listener implements EventSubscriberInterface
 	 */
 	public static function getSubscribedEvents()
 	{
-		return array(
-			'core.user_setup_after'		=> 'studio_goa_setup_lang',
-		);
+		return ['core.user_setup_after' => 'studio_goa_setup_lang'];
 	}
 
 	/* @var \phpbb\language\language */
@@ -40,7 +38,7 @@ class listener implements EventSubscriberInterface
 	/**
 	 * Constructor.
 	 *
-	 * @param  \phpbb\language\language $language Language object
+	 * @param  \phpbb\language\language $language Language object.
 	 * @return void
 	 * @access public
 	 */
@@ -50,7 +48,7 @@ class listener implements EventSubscriberInterface
 	}
 
 	/**
-	 * Load extension language file during user set up.
+	 * Load extension language file after the "$user" has been setup.
 	 *
 	 * @event  core.user_setup_after
 	 * @return void
