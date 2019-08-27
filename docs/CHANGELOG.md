@@ -1,5 +1,9 @@
 # phpBB Studio - GitHub OAuth2 light
 
+v1.0.4 27-08-2019
+- Use of our library at packagist
+- Code housekeeping
+
 v1.0.3 26-08-2019
 - Use our custom GitHub class written from scratch
 - Use of Composer autoloader
