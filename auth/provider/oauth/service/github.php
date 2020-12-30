@@ -65,7 +65,7 @@ class github extends \phpbb\auth\provider\oauth\service\base
 	{
 		if (!($this->service_provider instanceof \OAuth\OAuth2\Service\Studio_github))
 		{
-			throw new exception('AUTH_PROVIDER_OAUTH_ERROR_INVALID_SERVICE_TYPE');
+			throw new exception($this->lang->lang('AUTH_PROVIDER_OAUTH_ERROR_INVALID_SERVICE_TYPE'));
 		}
 
 		/* This was a callback request from GitHub, get the token */
@@ -105,7 +105,7 @@ class github extends \phpbb\auth\provider\oauth\service\base
 	{
 		if (!($this->service_provider instanceof \OAuth\OAuth2\Service\Studio_github))
 		{
-			throw new exception('AUTH_PROVIDER_OAUTH_ERROR_INVALID_SERVICE_TYPE');
+			throw new exception($this->lang->lang('AUTH_PROVIDER_OAUTH_ERROR_INVALID_SERVICE_TYPE'));
 		}
 
 		$result['login'] = '';
