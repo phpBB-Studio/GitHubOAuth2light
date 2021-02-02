@@ -1,5 +1,8 @@
 # phpBB Studio - GitHub OAuth2 light
 
+#### v1.0.6 on 03-02-2021
+- Fix Composer issue due to phpBB 3.3.3
+
 #### v1.0.5 on 30-12-2020
 - Fix GitHub authentication through query parameters deprecation (library)
 - Fix language object for exceptions

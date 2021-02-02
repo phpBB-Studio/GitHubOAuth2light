@@ -3,8 +3,8 @@
 	"type": "phpbb-extension",
 	"description": "Enable login via GitHub",
 	"homepage": "https://www.phpbbstudio.com",
-	"version": "1.0.5",
-	"time": "2020-12-30",
+	"version": "1.0.6",
+	"time": "2021-02-03",
 	"license": "GPL-2.0-only",
 	"authors": [
 		{
